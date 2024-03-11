@@ -7,8 +7,9 @@
 }
 
 body {
+    height: 100vh;
     background-color: #E4E9F7;
-
+    display: flex;
 }
 
 nav.menu-lateral {
@@ -25,6 +26,7 @@ nav.menu-lateral {
 
 nav.menu-lateral:hover {
     width: 300px;
+    
 }
 
 .expandir {
@@ -32,7 +34,6 @@ nav.menu-lateral:hover {
     padding-left: 10px;
     margin-bottom: 80px;
 }
-
 
 .expandir > i {
     color: black;
@@ -75,4 +76,47 @@ ul li.item-menu a .icon > i {
     margin-left: 6px;
 }
 
+div.search-box {
+    margin-left: 600px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
 
+.search-box {
+    display: flex;
+    width: 500px;
+    height: 60px;
+    background-color: white;
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search-box .lupa {
+    cursor: pointer;
+    min-width: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-box .lupa i {
+    font-size: 25px;
+}
+
+.search-box .input-buscar {
+    position: absolute;
+    left: 80px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 70px;
+}
+
+.search-box .input-buscar input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    width: 400px;
+}
